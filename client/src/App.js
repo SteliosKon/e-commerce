@@ -1,8 +1,8 @@
 import React, { Fragment } from "react"
 import { Container } from "react-bootstrap"
 
-import Header from "./components/Header.jsx"
-import Footer from "./components/Footer.jsx"
+import Header from "./components/layout/Header.jsx"
+import Footer from "./components/layout/Footer.jsx"
 import HomePage from "./pages/HomePage.jsx"
 
 function App() {

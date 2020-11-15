@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 import { Row, Col } from "react-bootstrap"
-import Product from "../components/Product.jsx"
+import Product from "../components/content/Product.jsx"
 import products from "../products"
 
 const HomePage = () => {

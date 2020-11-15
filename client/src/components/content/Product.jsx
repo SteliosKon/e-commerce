@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import { Card } from "react-bootstrap"
+import Rating from "./Rating.jsx"
 
 const Product = ({ product }) => {
   console.log(product)
@@ -17,7 +18,7 @@ const Product = ({ product }) => {
           </a>
           <Card.Text as="div">
             <div className="my-3">
-              {product.rating} from {product.numReviews}
+              <Rating data={product} />
             </div>
           </Card.Text>
           <Card.Text as="h3">${product.price}</Card.Text>

@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Nav, Navbar } from "react-bootstrap"
-import Logo from "../assets/mini-logo.jpg"
+import Logo from "../../assets/mini-logo.jpg"
 import "./header.scss"
 
 const Header = () => {
