@@ -52,7 +52,7 @@ const Productpage = ({ match }) => {
                 <Button
                   className="btn-block"
                   type="button"
-                  disabled={product.countInStock == 0}
+                  disabled={product.countInStock === 0}
                 >
                   ADD TO CART
                 </Button>
