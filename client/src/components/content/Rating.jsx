@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import "./rating.scss"
+import PropTypes from "prop-types"
 
 const Rating = ({ data, color }) => {
   let { rating, numReviews } = data
@@ -7,7 +8,6 @@ const Rating = ({ data, color }) => {
   return (
     <Fragment>
       <div className="rating">
-        {rating}{" "}
         <span>
           <i
             style={{ color }}
@@ -76,6 +76,11 @@ const Rating = ({ data, color }) => {
 
 Rating.defaultProps = {
   color: "#f8e825",
+}
+
+Rating.propTypes = {
+  data: PropTypes.object.isRequired,
+  color: PropTypes.string,
 }
 
 export default Rating
