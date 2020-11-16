@@ -13,7 +13,7 @@ const Productpage = ({ match }) => {
       setProduct(data)
     }
     fetchProduct()
-  }, [])
+  }, [match])
 
   return (
     <Fragment>
