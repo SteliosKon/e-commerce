@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose"
+import mongoose from "mongoose"
 
 const orderSchema = mongoose.Schema(
   {
@@ -64,7 +64,7 @@ const orderSchema = mongoose.Schema(
       default: 0.0,
     },
     isPaid: {
-      type: boolean,
+      type: Boolean,
       required: true,
       default: false,
     },
