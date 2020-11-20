@@ -10,7 +10,6 @@ const HomePage = () => {
     const fetchProducts = async () => {
       const { data } = await axios.get("/api/products")
       setProducts(data)
-      console.log("data", data)
     }
     fetchProducts()
   }, [])
