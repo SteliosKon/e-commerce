@@ -11,6 +11,7 @@ const Productpage = ({ match }) => {
     const fetchProduct = async () => {
       const { data } = await axios.get(`/api/product/${match.params.id}`)
       setProduct(data)
+      console.log(data)
     }
     fetchProduct()
   }, [match])

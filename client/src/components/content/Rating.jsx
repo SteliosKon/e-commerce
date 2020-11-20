@@ -3,7 +3,7 @@ import "./rating.scss"
 import PropTypes from "prop-types"
 
 const Rating = ({ data, color }) => {
-  let { rating, numReviews } = data
+  let { rating, numOfReviews } = data
 
   return (
     <Fragment>
@@ -68,7 +68,7 @@ const Rating = ({ data, color }) => {
             }
           />
         </span>{" "}
-        <span className="review-item"> {`(${numReviews})`} </span>
+        <span className="review-item"> {`(${numOfReviews})`} </span>
       </div>
     </Fragment>
   )

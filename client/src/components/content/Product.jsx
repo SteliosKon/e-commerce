@@ -5,6 +5,7 @@ import Rating from "./Rating.jsx"
 import "./product.scss"
 
 const Product = ({ product }) => {
+  console.log(product.image)
   return (
     <Fragment>
       <Card className="product my-3 p-3 rounded">
