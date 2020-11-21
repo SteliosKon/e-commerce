@@ -7,6 +7,8 @@ import { listProducts } from "../actions/productActions"
 
 // Components
 import Product from "../components/content/Product.jsx"
+import Loader from "../components/common/Loader"
+import Message from "../components/common/Message"
 
 const HomePage = () => {
   const dispatch = useDispatch()
@@ -21,9 +23,9 @@ const HomePage = () => {
     <Fragment>
       <h1 style={{ textAlign: "center" }}>Latest Products</h1>
       {loading ? (
-        <h1>Loading...</h1>
+        <Loader />
       ) : error ? (
-        <h3> We got this error .. {error}</h3>
+        <Message variant="danger" children={"This is an error"} />
       ) : (
         <Row>
           {products.map((product) => (
