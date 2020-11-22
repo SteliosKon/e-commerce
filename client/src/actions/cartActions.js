@@ -22,9 +22,7 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
 export const removeFromCart = (id) => async (dispatch, getState) => {
   dispatch({
     type: "CART_REMOVE_ITEM",
-    payload: {
-      product: id,
-    },
+    payload: id,
   })
 
   // Save cart to local storage

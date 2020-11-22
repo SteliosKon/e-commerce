@@ -84,7 +84,7 @@ const Cartpage = ({ match, location, history }) => {
                       <Button
                         type="button"
                         variant="light"
-                        onClick={removeFromCartHandler(item.product)}
+                        onClick={() => removeFromCartHandler(item.product)}
                       >
                         <i className="far fa-trash-alt"></i>
                       </Button>
@@ -101,11 +101,16 @@ const Cartpage = ({ match, location, history }) => {
           <ListGroup variant="flush">
             <ListGroup.Item>
               <h2>
-                SubTotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)})
-                items of total $
-                {cartItems
-                  .reduce((acc, item) => acc + item.qty * item.price, 0)
-                  .toFixed(2)}
+                Subtotal (
+                <b>{cartItems.reduce((acc, item) => acc + item.qty, 0)}</b>)
+                items of total
+                <b>
+                  {" "}
+                  $
+                  {cartItems
+                    .reduce((acc, item) => acc + item.qty * item.price, 0)
+                    .toFixed(2)}
+                </b>
               </h2>
             </ListGroup.Item>
             <ListGroup.Item>
