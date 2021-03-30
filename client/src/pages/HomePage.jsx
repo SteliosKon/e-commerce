@@ -29,7 +29,14 @@ const HomePage = () => {
       ) : (
         <Row>
           {products.map((product) => (
-            <Col sm={12} md={6} lg={4} xl={3} key={product._id}>
+            <Col
+              style={{ display: "flex", justifyContent: "center" }}
+              sm={12}
+              md={6}
+              lg={6}
+              xl={4}
+              key={product._id}
+            >
               <Product product={product} />
             </Col>
           ))}
